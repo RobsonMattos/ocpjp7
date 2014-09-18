@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="1-Java Class Design"/>
+	<classpathentry kind="src" path="2-advanced-class-designer"/>
+	<classpathentry kind="src" path="3-Object-Oriented Design Principles"/>
+	<classpathentry kind="src" path="4-Generics and Collections"/>
+	<classpathentry kind="src" path="5-String Processing"/>
+	<classpathentry kind="src" path="7-Java I_O Fundamentals"/>
+	<classpathentry kind="src" path="10-Threads"/>
+	<classpathentry kind="src" path="6-Exceptions and Assertions"/>
+	<classpathentry kind="src" path="9-Building Database Applications with JDBC"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.datatools.connectivity.jdt.DRIVERLIBRARY/MySQL JDBC Driver"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
