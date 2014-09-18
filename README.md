@@ -1,4 +1,4 @@
 ocpjp7
 ======
 
-Estudo de certificação copjp7
+Estudo de certificação ocpjp7
