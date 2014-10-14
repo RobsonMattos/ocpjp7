@@ -5,10 +5,9 @@ import java.text.DecimalFormat;
 public class EstudoDecimalFormat {
 
 	public static void main(String[] args) {
-		
-		String s = "2345.208";
-		DecimalFormat df = new DecimalFormat("###.##");
-		System.out.println(df.format(s)); // IllegalArgumentException
+		DecimalFormat df = new DecimalFormat("###,###.##");
+		String s = df.format(32112.255);
+		System.out.println(s); // IllegalArgumentException
 	}
 
 }

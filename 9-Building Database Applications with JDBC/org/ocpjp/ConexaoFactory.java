@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class ConexaoFactory {
 	
 	private String nome = "root";
-	private String sobreNome = "root";
+	private String senha = "root";
 	public String url = "jdbc:mysql://localhost:3306/ocpjp";
 	public Connection con = null;
 	
@@ -23,7 +23,7 @@ public class ConexaoFactory {
 		
 		try {
 			// Class.forName("com.mysql.jdbc.Driver"); // registra jdbc driver para carregar o driver
-			return DriverManager.getConnection(url, nome, sobreNome);
+			return DriverManager.getConnection(url, nome, senha);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -17,5 +17,8 @@ public class EstudoJdbc {
 		familiaDao.deletarTodos();
 		familiaDao.inserir(new ReadFileDao().getMembros());
 		familiaList = familiaDao.obter();
+		for (Familia familia :  familiaList) {
+			System.out.println(familia);
+		}
 	}
 }

@@ -3,6 +3,9 @@ package estudo_string;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+// Matcher: é a classe que vai gerenciar toda a pesquisa (faz as buscas, retorna resultados e etc). 
+// Ela também não possui construtor e você terá que usar o método public Matcher 
+// matcher(String s) da classe Pattern para obter a intancia de Matcher.
 public class PatternMatcher {
 
 	public static void main(String[] args) {

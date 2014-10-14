@@ -1,18 +1,21 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-class SuperEstudo {
-	void print() { System.out.println("Super..."); }
-}
 
-public class Estudo1 extends SuperEstudo {
-	
-	void print() { System.out.println("");  }
+
+public class Estudo1 {
 	
 	public static void main(String[] args) {
-		// DownCast
-		Estudo1 estudo1 = (Estudo1) new SuperEstudo(); // Lança ClassCastException
+		String nome = "Robson Mattos";
+		String busca = "Ma";
+		Pattern pattern = Pattern.compile(busca);
+		Matcher matcher = pattern.matcher(nome);
 		
-		//UpCast
-		SuperEstudo superEstudo = new SuperEstudo();
+		while (matcher.find()) {
+			System.out.println("Encontrou " + busca + " em " +  + matcher.start());
+			System.out.println("Match: " + matcher.group());
+		}
+		
 	}
-
+	
 }
