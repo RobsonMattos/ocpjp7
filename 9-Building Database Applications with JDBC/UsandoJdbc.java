@@ -10,8 +10,8 @@ public class UsandoJdbc {
 	public static void main(String[] args) {
 		// obtem uma conexão
 		try (Connection con = new Conectando().getConnection()){
-			// Create a statement.
-			Statement st = con.createStatement();
+			// Create a statement. Auto-Commit default
+			Statement st = con.createStatement(); // o commit é realizado qdo o statement é finalizado
 			ResultSet rs = st.executeQuery("select * from familia");
 			while(rs.next()) {
 				System.out.println(rs.getString(2));
