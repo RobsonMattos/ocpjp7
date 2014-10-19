@@ -4,5 +4,5 @@ package estudo_enum;
 // Não podem ser abstract
 
 public enum Day {
-	SANDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+	SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
 }

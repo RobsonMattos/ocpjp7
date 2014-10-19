@@ -1,7 +1,9 @@
 import java.text.NumberFormat;
 import java.util.Locale;
 
-// Locale.forLanguageTag Factory Method, 
+// Item 1: Read and set the locale by using the Locale object..
+// 	- Setting the Locale
+// 	- Creating a Locale
 public class EstudoLocalization {
 	
 	// Locale aLocale = new Locale.Builder().setLanguage("fr").setRegion("CA").build(); // Locale.Builder Class
