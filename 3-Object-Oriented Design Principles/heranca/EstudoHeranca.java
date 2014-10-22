@@ -1,10 +1,18 @@
 package heranca;
 
+import java.io.IOException;
+
+// cuidado com metodo finalize() que lança Trowble;
+
 interface I3 {
 	String nome = "Robson"; // public static final
 }
 
-public class EstudoHeranca implements I3 {
+class SuperClasse {
+	void m1() throws IOException {}
+}
+
+public class EstudoHeranca extends SuperClasse implements I3 {
 	
 //	String nome; // pode override declaracao
 	
@@ -16,4 +24,8 @@ public class EstudoHeranca implements I3 {
 		System.out.println(estudo3.nome);
 	}
 
+	// ------------------------------------------------------------------------
+	// lança exception apenas se o método da super lançar
+	void m1() {} //modificadores igual ou mais permissivo
+	
 }
