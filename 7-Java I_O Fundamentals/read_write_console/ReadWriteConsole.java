@@ -2,22 +2,21 @@ package read_write_console;
 
 import java.io.Console;
 
-// Item 1: Read and write data from the console.
+// não funciona no eclipse
 public class ReadWriteConsole {
 
 	public static void main(String[] args) {
-//		Scanner s = new Scanner(System.in);
-//		System.out.println("Digite seu nome: ");
-//		String nome = s.nextLine();
-//		System.out.println(nome);
+		String name = "";
+		Console c  = System.console();
+		char[] pw;
+		pw = c.readPassword("%s", "pw: ");
 		
-		// console();
-	}
-	
-	static void console() {
-		Console con  = System.console();
-		String name = con.readLine("Digite o usuario: "); // ou pode ser char[] name
-		System.out.println(name);
+		for (char ch : pw)
+			c.format("%c ", ch);
+		
+		c.format("\n");
+		
+//		System.out.println(name);
 	}
 	
 }
