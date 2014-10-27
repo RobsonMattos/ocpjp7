@@ -5,7 +5,6 @@ import java.sql.SQLException;
 // Item 2: Connect to a database by using a JDBC driver.
 // - Establishing a Connection
 // - Connecting with DataSource Objects
-
 public class Conectando {
 	
 	private String nome = "root";
@@ -13,6 +12,7 @@ public class Conectando {
 	private String url = "jdbc:mysql://localhost:3306/ocpjp";
 	private Connection con = null;
 	
+	//JDBC suporta tanto two-tier e tree-tier
 	public Connection getConnection() {
 		try {
 			con = DriverManager.getConnection(url, nome, senha);

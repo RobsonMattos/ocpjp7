@@ -2,12 +2,12 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-
 // Item 5: Use the JDBC 4.1 RowSetProvider, RowSetFactory and RowSet interfaces.
 // 	- Using RowSet Objects
 // 	- Using JdbcRowSet Objects - sempre mantem conexão via JDBC Driver
 public class EstudoRowSet {
-
+	// CachedRowSetuso com thin-cliente | not appropriate for storing extremely large data set
+		
 	public static void main(String[] args) {
 		Connection con = new Conectando().getConnection();
 		try {

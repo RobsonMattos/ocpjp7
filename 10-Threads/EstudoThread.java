@@ -13,7 +13,7 @@ public class EstudoThread {
 		t2.start();
 		t3.start();
 		t2.interrupt(); // interrope um sleep
-		t2.join(); // aguarda a thread terinar ou morrer
+		t2.join(); // aguarda a thread terminar ou morrer
 		System.out.println("Programa terminou");
 	}
 }
