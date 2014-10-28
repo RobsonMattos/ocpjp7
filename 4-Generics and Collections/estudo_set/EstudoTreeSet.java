@@ -7,6 +7,7 @@ import java.util.TreeSet;
 import dao.FamiliaSetDao;
 import model.Familia;
 
+// Se o objeto a ser inserido no conjunto não puder ser comparado ança ClassCastError
 public class EstudoTreeSet {
 
 	public static void main(String[] args) {

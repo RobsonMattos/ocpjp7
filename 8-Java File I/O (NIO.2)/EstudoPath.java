@@ -3,6 +3,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+// 8.1 - Operate on file and directory paths with the Path class
+// 8.2 - Check, delete, copy, or move a file or directory with the Files class  
 public class EstudoPath {
 
 	public static void main(String[] args) {

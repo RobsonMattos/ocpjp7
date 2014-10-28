@@ -1,2 +1,3 @@
 EstudoBuffer
 Escrevendo algo para estudar.
+Nova liha de estudo

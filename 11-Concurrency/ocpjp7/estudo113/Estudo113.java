@@ -1,4 +1,4 @@
-package ocpjp7;
+package ocpjp7.estudo113;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.concurrent.Future;
 
 // 11.3 -  Use Executor, ExecutorService, Executors, Callable, and Future to execute tasks using thread pools.
 public class Estudo113 {
-
+// java.util.concurrent.Executor - tem apenas o método execute()
 	public static void main(String[] args) throws Exception {
 		final ExecutorService pool = Executors.newFixedThreadPool(5);
 		List<Callable<Integer>> cal = new ArrayList<Callable<Integer>>();

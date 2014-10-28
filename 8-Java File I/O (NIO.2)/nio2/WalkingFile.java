@@ -11,7 +11,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 
 // Item 4: Recursively access a directory tree.
 // 	- Walking the File Tree
-public class WalkingFile { // podemos estender a classe SimpleFileVisitor
+public class WalkingFile { // podemos extender a classe SimpleFileVisitor
 
 	public static void main(String[] args) throws IOException {
 		Path path = Paths.get("/home/robson/Desenvolvimento/pet");
